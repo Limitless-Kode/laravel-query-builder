@@ -4,7 +4,7 @@
     "type": "git",
     "url": "git+https://github.com/limitless-kode/laravel-query-builder.git"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "String helper method for all string and JSON manipulations",
   "main": "./dist/index.js",
   "scripts": {
@@ -46,8 +46,7 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.9.5"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "release-it": {
     "git": {
       "commitMessage": "chore: release v${version}"
