@@ -1,5 +1,12 @@
 
 
+## [0.2.3](https://github.com/limitless-kode/laravel-query-builder/compare/0.2.2...0.2.3) (2023-03-29)
+
+
+### Bug Fixes
+
+* added tslint and prettier install ([83dfbc9](https://github.com/limitless-kode/laravel-query-builder/commit/83dfbc97800f308ac0e8792c9c8a6dfa041c1310))
+
 ## [0.2.2](https://github.com/limitless-kode/laravel-query-builder/compare/0.2.1...0.2.2) (2023-03-29)
 
 

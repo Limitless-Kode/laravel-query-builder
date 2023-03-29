@@ -4,7 +4,7 @@
     "type": "git",
     "url": "git+https://github.com/limitless-kode/laravel-query-builder.git"
   },
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "JavaScript Query Builder provides an easy way to build a query string compatible with spatie/laravel-query-builder.",
   "main": "./dist/index.js",
   "scripts": {
