@@ -1,5 +1,12 @@
 
 
+## [0.2.6](https://github.com/limitless-kode/laravel-query-builder/compare/0.2.5...0.2.6) (2023-03-29)
+
+
+### Bug Fixes
+
+* removed project build ([6c2b9d3](https://github.com/limitless-kode/laravel-query-builder/commit/6c2b9d34f19ca54709299becb71ee4efe6dbe405))
+
 ## [0.2.5](https://github.com/limitless-kode/laravel-query-builder/compare/0.2.4...0.2.5) (2023-03-29)
 
 ## [0.2.4](https://github.com/limitless-kode/laravel-query-builder/compare/0.2.3...0.2.4) (2023-03-29)
