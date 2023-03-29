@@ -1,5 +1,12 @@
 
 
+## [0.2.0](https://github.com/limitless-kode/laravel-query-builder/compare/0.1.2...0.2.0) (2023-03-29)
+
+
+### Features
+
+* Added a when conditional filter ([096d01d](https://github.com/limitless-kode/laravel-query-builder/commit/096d01d75f39fad5ebecb2852261469ccf98e0fc))
+
 ## [0.1.2](https://github.com/limitless-kode/laravel-query-builder/compare/0.1.1...0.1.2) (2023-03-29)
 
 ## 0.1.1 (2023-03-28)

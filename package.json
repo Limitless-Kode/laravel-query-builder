@@ -4,7 +4,7 @@
     "type": "git",
     "url": "git+https://github.com/limitless-kode/laravel-query-builder.git"
   },
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "String helper method for all string and JSON manipulations",
   "main": "./dist/index.js",
   "scripts": {
