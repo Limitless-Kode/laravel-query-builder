@@ -6,7 +6,6 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/limitless-kode/laravel-query-builder)
 ![npm](https://img.shields.io/npm/dw/laravel-query-builder)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
-[![LICENSE](https://img.shields.io/github/license/limitless-kode/laravel-query-builder.svg)](LICENSE)
 
 The `spatie` function is a URL builder that allows you to easily add query parameters to a URL using a fluent interface compatible with [spatie/laravel-query-builder](https://github.com/spatie/laravel-query-builder).
 
