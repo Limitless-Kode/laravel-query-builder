@@ -1,5 +1,7 @@
 
 
+## [0.1.2](https://github.com/limitless-kode/laravel-query-builder/compare/0.1.1...0.1.2) (2023-03-29)
+
 ## 0.1.1 (2023-03-28)
 
 
