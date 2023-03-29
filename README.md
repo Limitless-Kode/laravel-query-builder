@@ -75,7 +75,6 @@ console.log(result);
 
 ### `sort(...field: string[])`
 Adds a sort query parameter to the URL. The `field` argument can be a string or an array of strings.
-
 If the URL already has a sort parameter, the new values are appended to the existing ones. Otherwise, a new sort parameter is added.
 
 > Example:
@@ -90,6 +89,29 @@ const result = spatie(url)
 console.log(result); 
 // Outputs: https://example.com/posts?sort=title,-date
 ```
+
+<br/>
+<br/>
+
+### `when(condition: boolean, callback: (param: any)=> any)`
+Adds a query parameter to the URL. The `condition` argument must be a boolean.
+And the `callback` should would return an interface for further chaining or building.
+
+> Example
+
+```javascript
+const url = 'https://example.com/posts';
+
+const result = spatie(url).include('author')
+    .when('claver'.length > 5, q => q.sort('-title'))
+    .sort('name')
+    .filter("status","Published").build()
+
+console.log(result);
+// Outputs: https://example.com/posts?include=author&sort=-title,name&filter[status]=Published
+```
+
+
 <br/>
 <br/>
 
