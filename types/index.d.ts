@@ -1,8 +1,8 @@
-declare function spatie(url: string): {
-    when(condition: boolean, callback: (param: any) => any): any;
-    filter(key: string, value: string): any;
-    include(...value: any): any;
-    sort(...field: string[]): any;
-    build(): string;
+export type SpatieType = {
+    when: (condition: boolean, callback: (param: any) => SpatieType) => SpatieType;
+    filter: (key: string, value: string) => SpatieType;
+    include: (...value: any) => SpatieType;
+    sort: (...field: string[]) => SpatieType;
+    build: () => string;
 };
-export default spatie;
+export declare function spatie(url: string): SpatieType;

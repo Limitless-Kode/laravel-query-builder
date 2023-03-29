@@ -1,12 +1,4 @@
-export type SpatieType = {
-  when: (condition: boolean, callback: (param: any) => SpatieType) => SpatieType;
-  filter: (key: string, value: string) => SpatieType;
-  include: (...value: any) => SpatieType;
-  sort: (...field: string[]) => SpatieType;
-  build: () => string;
-};
-
-export function spatie(url: string): SpatieType {
+function spatie(url: string) {
   let spatieURL = url;
   const queryParamRegex = /[?&][\w-]+=([\w-]*)/g;
 
@@ -21,7 +13,7 @@ export function spatie(url: string): SpatieType {
       if (spatieURL.match(queryParamRegex)) {
         spatieURL = spatieURL.concat(`&filter[${key}]=${value}`);
       } else {
-        spatieURL = spatieURL.concat(`?filter[${key}]=${value}`);
+        spatieURL = spatieURL.concat(`?filter=[${key}]{value}`);
       }
       return this;
     },
@@ -66,3 +58,5 @@ export function spatie(url: string): SpatieType {
     },
   };
 }
+
+export {spatie};

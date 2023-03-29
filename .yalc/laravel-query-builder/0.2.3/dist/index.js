@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.spatie = void 0;
 function spatie(url) {
     let spatieURL = url;
     const queryParamRegex = /[?&][\w-]+=([\w-]*)/g;
@@ -16,7 +15,7 @@ function spatie(url) {
                 spatieURL = spatieURL.concat(`&filter[${key}]=${value}`);
             }
             else {
-                spatieURL = spatieURL.concat(`?filter[${key}]=${value}`);
+                spatieURL = spatieURL.concat(`?filter=[${key}]{value}`);
             }
             return this;
         },
@@ -60,5 +59,5 @@ function spatie(url) {
         },
     };
 }
-exports.spatie = spatie;
+exports.default = spatie;
 //# sourceMappingURL=index.js.map

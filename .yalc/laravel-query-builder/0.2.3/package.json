@@ -1,0 +1,63 @@
+{
+  "name": "@limitless.claver/laravel-query-builder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limitless-kode/laravel-query-builder.git"
+  },
+  "version": "0.2.3",
+  "description": "JavaScript Query Builder provides an easy way to build a query string compatible with spatie/laravel-query-builder.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "release": "release-it",
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "keywords": [
+    "query builder"
+  ],
+  "author": {
+    "name": "Peter Claver",
+    "email": "limitless.claver@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "email": "limitless.claver@gmail.com",
+    "url": "https://github.com/limitless-kode/laravel-query-builder/issues"
+  },
+  "homepage": "https://github.com/limitless-kode/laravel-query-builder#readme",
+  "dependencies": {},
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": false
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "preset": {
+          "name": "conventionalcommits",
+          "types": [
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Bug Fixes"
+            },
+            {}
+          ]
+        }
+      }
+    }
+  },
+  "yalcSig": "7c8b49838762d69e423a87408f21ec54"
+}
