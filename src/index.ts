@@ -31,18 +31,17 @@ function spatie(url: string) {
       }
       return this;
     },
-    sort(field: string, asc: boolean = true) {
+    sort(...field: string[]) {
       const regex = /sort=([-?\w,]+)/;
       const match = spatieURL.match(regex);
-      const prefix = asc ? '' : '-';
       if (match) {
         const sort = match[1];
-        spatieURL = spatieURL.replace(`sort=${sort}`, `sort=${prefix.concat(field)}`);
+        spatieURL = spatieURL.replace(`sort=${sort}`, `sort=${field}`);
       } else {
         if (spatieURL.match(queryParamRegex)) {
-          spatieURL = spatieURL.concat(`&sort=${prefix.concat(field)}`);
+          spatieURL = spatieURL.concat(`&sort=${field}`);
         } else {
-          spatieURL = spatieURL.concat(`?sort=${prefix.concat(field)}`);
+          spatieURL = spatieURL.concat(`?sort=${field}`);
         }
       }
 
