@@ -1,5 +1,12 @@
 
 
+## [0.2.4](https://github.com/limitless-kode/laravel-query-builder/compare/0.2.3...0.2.4) (2023-03-29)
+
+
+### Bug Fixes
+
+* fixed bug with filter method and added a return type for spatie ([51a592b](https://github.com/limitless-kode/laravel-query-builder/commit/51a592b7518e2cccf46b8ae5d267cb656c34d071))
+
 ## [0.2.3](https://github.com/limitless-kode/laravel-query-builder/compare/0.2.2...0.2.3) (2023-03-29)
 
 
