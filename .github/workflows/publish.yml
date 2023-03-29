@@ -32,9 +32,6 @@ jobs:
       - name: Format
         run: npm run format
 
-      - name: Build Project
-        run: npm run build
-
       - name: Publish package
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
