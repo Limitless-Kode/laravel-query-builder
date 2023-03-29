@@ -20,6 +20,10 @@ yarn add @limitless.claver/laravel-query-builder
 To use the `spatie` function, simply call it with a URL string as its argument. The returned object has three 
 methods: `filter`, `include`, and `sort`, which can be chained together to build the desired URL.
 
+```javascript
+const {spatie} = require("@limitless.claver/laravel-query-builder");
+```
+
 ### Example
 ```javascript
 const url = 'https://example.com';
