@@ -8,9 +8,14 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
 [![LICENSE](https://img.shields.io/github/license/limitless-kode/laravel-query-builder.svg)](LICENSE)
 
-The `spatie` function is a URL builder that allows you to easily add query parameters to a URL using a fluent interface. 
-The function returns an object with three methods: `filter`, `include`, and `sort`.
+The `spatie` function is a URL builder that allows you to easily add query parameters to a URL using a fluent interface compatible with [spatie/laravel-query-builder](https://github.com/spatie/laravel-query-builder).
 
+## Install
+You can install package using yarn (or npm):
+
+```bash
+yarn add @limitless.claver/laravel-query-builder
+```
 ## Usage
 To use the `spatie` function, simply call it with a URL string as its argument. The returned object has three 
 methods: `filter`, `include`, and `sort`, which can be chained together to build the desired URL.

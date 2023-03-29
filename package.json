@@ -1,11 +1,11 @@
 {
-  "name": "laravel-query-builder",
+  "name": "@limitless.claver/laravel-query-builder",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/limitless-kode/laravel-query-builder.git"
   },
   "version": "0.2.0",
-  "description": "String helper method for all string and JSON manipulations",
+  "description": "JavaScript Query Builder provides an easy way to build a query string compatible with spatie/laravel-query-builder.",
   "main": "./dist/index.js",
   "scripts": {
     "start": "node ./dist/index.js",
