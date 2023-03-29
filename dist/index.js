@@ -4,6 +4,12 @@ function spatie(url) {
     let spatieURL = url;
     const queryParamRegex = /[?&][\w-]+=([\w-]*)/g;
     return {
+        when(condition, callback) {
+            if (condition) {
+                return callback(this);
+            }
+            return this;
+        },
         filter(key, value) {
             if (spatieURL.match(queryParamRegex)) {
                 spatieURL = spatieURL.concat(`&filter[${key}]=${value}`);
@@ -17,8 +23,8 @@ function spatie(url) {
             const regex = /include=([\w,]+)/;
             const match = spatieURL.match(regex);
             if (match) {
-                const inludes = match[1];
-                const includeValues = inludes.split(',');
+                const includes = match[1];
+                const includeValues = includes.split(',');
                 spatieURL = spatieURL.replace(`include=${includeValues}`, `include=${Array.from([...includeValues, ...value])}`);
             }
             else {
@@ -36,7 +42,7 @@ function spatie(url) {
             const match = spatieURL.match(regex);
             if (match) {
                 const sort = match[1];
-                spatieURL = spatieURL.replace(`sort=${sort}`, `sort=${field}`);
+                spatieURL = spatieURL.replace(`sort=${sort}`, `sort=${[sort, field]}`);
             }
             else {
                 if (spatieURL.match(queryParamRegex)) {

@@ -20,6 +20,15 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org
 
+      - name: Linter
+        run: npm run lint
+
+      - name: Format
+        run: npm run format
+
+      - name: Build Project
+        run: npm run build
+
       - name: Publish package
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
