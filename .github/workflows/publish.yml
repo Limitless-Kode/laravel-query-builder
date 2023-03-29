@@ -20,6 +20,12 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org
 
+      - name: Install tslint
+        run: npm install tslint
+
+      - name: Install Prettier
+        run: npm install prettier
+
       - name: Linter
         run: npm run lint
 
